@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Webpage Using JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">Dynamic Webpage</h1>
+
+    <p id="message">
+        Click the button to change the webpage dynamically.
+    </p>
+
+    <button onclick="changeContent()">Click Here</button>
+
+    <script>
+        function changeContent() {
+            document.getElementById("heading").innerHTML =
+                "Welcome to JavaScript";
+
+            document.getElementById("message").innerHTML =
+                "The webpage content has been changed dynamically.";
+
+            document.body.style.backgroundColor = "lightblue";
+
+            document.getElementById("heading").style.color = "red";
+        }
+    </script>
+
+</body>
+</html>
